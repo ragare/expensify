@@ -1,20 +1,20 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add numeral
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add firebase
 
 PATH: 
-  C:\Program Files\cmder\bin;C:\Program Files\cmder\vendor\bin;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files\cmder\vendor\conemu-maximus5;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\dotnet\;C:\OpenSSL-Win64\bin;C:\Program Files (x86)\Java\jre1.8.0_121\bin;C:\Program Files\AutoFirma\AutoFirma;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Graphviz2.38\bin;C:\Program Files\Couchbase\Server\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\rafa\AppData\Local\Android\Sdk\tools;C:\Users\rafa\AppData\Local\Android\Sdk\platform-tools;C:\Users\rafa\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\SQL Anywhere 16\bin64;C:\Program Files\SQL Anywhere 16\bin32;C:\Program Files\MongoDB\Server\3.6\bin;C:\HashiCorp\Vagrant\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Users\rafa\AppData\Local\Android\sdk\build-tools\26.0.2;C:\Program Files\Git\cmd;C:\Program Files\Java\jre1.8.0_212\bin;C:\Program Files (x86)\Common Files\Apple\Internet Services\;C:\apache-maven-3.5.4\bin;C:\Program Files\swipl\bin;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\cmder;C:\Program Files\Amazon\AWSCLI\;C:\Program Files (x86)\Yarn\bin\;C:\Python\Python37-32\Scripts\;C:\Python\Python37-32\;C:\Users\rafa\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Couchbase\Server\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\rafa\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\MinGW\msys\1.0\bin;C:\Program Files\BioStar 2(x64)\ve\dist\lib\bsve\dll;C:\Users\rafa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rafa\AppData\Local\atom\bin;C:\Users\rafa\AppData\Local\Microsoft\WindowsApps;C:\Users\rafa\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\cmder
+  C:\Program Files\Cmder\bin;C:\Program Files\Cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files\Cmder\vendor\conemu-maximus5;C:\Program Files\Cmder\vendor\conemu-maximus5\ConEmu;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Calibre2\;C:\Program Files\Kitematic-Windows;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Git\cmd;C:\Python27;C:\Program Files\PuTTY\;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\Rafa\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Amazon\AWSCLI\bin\;C:\Users\Rafa\AppData\Local\Microsoft\WindowsApps;C:\Users\Rafa\AppData\Roaming\npm;C:\Users\Rafa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm 2018.3.2\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.2\bin;C:\Users\Rafa\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\heroku\bin;C:\Program Files\Git\mingw64;C:\Program Files\Git\usr\bin;C:\Program Files\Cmder
 
 Yarn version: 
   1.17.3
 
 Node version: 
-  10.14.2
+  10.15.3
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\rafa\Documents\expensify-app\node_modules\acorn-globals\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'c:\expensify\node_modules\acorn-dynamic-import\node_modules\.bin'
 
 npm manifest: 
   {
@@ -45,6 +45,7 @@ npm manifest:
       "moment": "2.18.1",
       "node-sass": "4.5.3",
       "normalize.css": "7.0.0",
+      "numeral": "^2.0.6",
       "raf": "3.3.2",
       "react": "16.0.0",
       "react-addons-shallow-compare": "15.6.0",
@@ -5039,6 +5040,11 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
     integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
+  
+  numeral@^2.0.6:
+    version "2.0.6"
+    resolved "https://registry.yarnpkg.com/numeral/-/numeral-2.0.6.tgz#4ad080936d443c2561aed9f2197efffe25f4e506"
+    integrity sha1-StCAk21EPCVhrtnyGX7//iX05QY=
   
   "nwmatcher@>= 1.3.9 < 2.0.0":
     version "1.4.4"

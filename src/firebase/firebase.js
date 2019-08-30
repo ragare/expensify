@@ -15,8 +15,9 @@ const config = {
 // Initialize Firebase
 firebase.initializeApp(config);
 
+const database = firebase.database()
 
-firebase.database().ref().set({
+database.ref().set({
     name: 'Rafael Garcia',
     age: 57,
     isSingle: false,
@@ -24,4 +25,12 @@ firebase.database().ref().set({
         city: 'Valencia',
         country: 'Spain'
     }
+})
+
+database.ref('age').set(27)
+database.ref('location/city').set('New York')
+
+database.ref('atributtes').set({
+    height: 14,
+    weight: 55
 })

@@ -20,7 +20,11 @@ const database = firebase.database()
 database.ref().set({
     name: 'Rafael Garcia',
     age: 57,
-    isSingle: false,
+    stressLevel: 6,
+    job: {
+        title: 'Software developer',
+        company: 'Google'
+    },
     location: {
         city: 'Valencia',
         country: 'Spain'
@@ -28,17 +32,23 @@ database.ref().set({
 }).then((data) => {
     console.log('Data is saved: ', data)
 }).catch((error)=>{
-    console.log('error: ', error)
+    console.log('This failed. ', error)
 })
 
-// database.ref('age').set(27)
-// database.ref('location/city').set('New York')
-
-database.ref('atributtes').set({
-    height: 14,
-    weight: 55
-}).then(()=>{
-
-}).catch((err)=>{
-    console.log('Err: ', err)
+database.ref().update({
+    stressLevel: 9,
+    'job/company': 'Amazon'    ,
+    'location/city': 'Seattle'
+}).then((data) => {
+    console.log('Data update is saved: ', data)
+}).catch((error)=>{
+    console.log('This update failed. ', error)
 })
+
+// database.ref().remove()
+//     .then(function () {
+//         console.log("Remove succeeded.")
+//     })
+//     .catch(function (error) {
+//         console.log("Remove failed: " + error.message)
+//     });

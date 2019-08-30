@@ -1,4 +1,6 @@
 import * as firebase from 'firebase'
+import moment from 'moment'
+import expenses from '../test/fixtures/expenses'
 
 // Your web app's Firebase configuration
 const config = {
@@ -16,16 +18,85 @@ const config = {
 firebase.initializeApp(config);
 
 const database = firebase.database()
-
-
-const watcher = database.ref().on('value',
-    (snapshot) => {
-        const val = snapshot.val()
-        console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`)
-    },
-    (e) => {
-        console.log('error in subscription', e)
+database.ref('expenses')
+    .on('child_added', (snapshot) => {
+        console.log('ADDED', snapshot.key, snapshot.val())
     })
+
+
+// database.ref('expenses')
+//     .on('child_removed', (snapshot) => {
+//         console.log('REMOVE', snapshot.key, snapshot.val())
+//     })
+
+// database.ref('expenses')
+//     .on('child_changed', (snapshot) => {
+//         console.log('CHANGE', snapshot.key, snapshot.val())
+//     })
+
+
+// database.ref('expenses')
+//     .on('value', (snapshot) => {
+//         const expenses = []
+//         snapshot.forEach( item => {
+//             expenses.push({
+//                 id: item.key,
+//                 ...item.val()
+//             })
+//         })
+//         console.log(expenses)
+//     })
+
+
+// database.ref('expenses')
+// .once('value')
+// .then((snapshot)=>{
+//     const expenses = []
+//     snapshot.forEach((childSanpshot) => {
+//         expenses.push({
+//             id: childSanpshot.key,
+//             ...childSanpshot.val()
+//         })
+//     })
+//     console.log(expenses)
+// })
+
+// expenses.map((expense) => {
+//     delete expense.id
+//     expense.createdAt = expense.createdAt.valueOf()
+//     database.ref('expenses').push(expense)
+// })
+
+// database.ref('notes/-LnX25u_hgIzIJZF9oRo').remove()
+// database.ref('notes').push({
+//     title: '15 Title',
+//     body: '15 Body'
+// })
+// .then((data)=>{
+//     console.log('returned data frm push. ', data.key)
+// })
+
+// const notes = [
+//     {
+//         id: '12',
+//         title: '12 Title',
+//         body: '12 Body'
+//     }, {
+//         id: '14',
+//         title: '14 Title',
+//         body: '14 Body'
+//     }]
+
+// database.ref('notes').set(notes)
+
+// const watcher = database.ref().on('value',
+//     (snapshot) => {
+//         const val = snapshot.val()
+//         console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`)
+//     },
+//     (e) => {
+//         console.log('error in subscription', e)
+//     })
 
 
 // const watcher = database.ref().on('value',

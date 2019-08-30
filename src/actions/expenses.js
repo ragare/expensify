@@ -1,4 +1,6 @@
 import uuid from 'uuid'
+import database from '../firebase/firebase'
+
 // ADD_EXPENSE
 export const addExpense = ({
     description = '',
@@ -16,6 +18,18 @@ export const addExpense = ({
         createdAt
     }
 })
+
+export const startAddExpense = (expenseData = {}) => {
+    return (disptach) => {
+        const {
+            description = '',
+            note = '',
+            amount = 0,
+            createdAt = 0
+        } = expenseData
+    }
+}
+
 // REMOVE_EXPENSE
 export const removeExpense = ({ id }) => ({
     type: 'REMOVE_EXPENSE',

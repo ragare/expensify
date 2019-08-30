@@ -25,12 +25,20 @@ database.ref().set({
         city: 'Valencia',
         country: 'Spain'
     }
+}).then((data) => {
+    console.log('Data is saved: ', data)
+}).catch((error)=>{
+    console.log('error: ', error)
 })
 
-database.ref('age').set(27)
-database.ref('location/city').set('New York')
+// database.ref('age').set(27)
+// database.ref('location/city').set('New York')
 
 database.ref('atributtes').set({
     height: 14,
     weight: 55
+}).then(()=>{
+
+}).catch((err)=>{
+    console.log('Err: ', err)
 })

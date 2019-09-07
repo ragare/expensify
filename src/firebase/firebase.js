@@ -11,7 +11,6 @@ const config = {
     appId: process.env.FIREBASE_APP_ID
 }
 
-
 // Initialize Firebase
 firebase.initializeApp(config);
 

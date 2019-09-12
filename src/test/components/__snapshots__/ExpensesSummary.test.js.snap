@@ -1,19 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should sow a summary with 1 and a total of $99 1`] = `
-<h1>
-  Viewing 
-  1
-   totalling 
-  $99.00
-</h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       totalling 
+      <span>
+        $99.00
+      </span>
+    </h1>
+    <div
+      className="page_header__actions"
+    >
+      <Link
+        className="button"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`should sow a summary with 2 and a total of $99 1`] = `
-<h1>
-  Viewing 
-  2
-   totalling 
-  $99.00
-</h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        2
+      </span>
+       totalling 
+      <span>
+        $99.00
+      </span>
+    </h1>
+    <div
+      className="page_header__actions"
+    >
+      <Link
+        className="button"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
 `;
